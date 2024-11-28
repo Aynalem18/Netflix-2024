@@ -4,9 +4,9 @@
 
 import React, { useEffect, useState } from "react";
 import "./row.css";
-import axios from  "../../../Utils/axios"
+import axios from  "../../../Utils/axios";
 
-import movieTrailer from "movie-trailer"
+import movieTrailer from "movie-trailer";
 import YouTube from "react-youtube";
 
 const Row = ({ title, fetchUrl, isLargeRow }) => {
@@ -65,7 +65,8 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
             alt={movie.name}
             className={`row__poster ${isLargeRow && "row__posterLarge"}`}  
           />
-        ))}
+        ))
+        }
       </div>
 
       <div style={{ padding: "40px" }}>
@@ -73,6 +74,6 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       </div>
     </div>
   );
-};
+}
 
-export default Row;
+export default Row

@@ -24,4 +24,4 @@ const RowList = () => {
   );
 }
 
-export default RowList;
+export default RowList
